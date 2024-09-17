@@ -1,0 +1,512 @@
+.container{
+  background-color: #FFF;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+   font-style: italic;
+}
+
+button{
+  background-color: purple;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+} 
+
+
+/* ----------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(247, 136, 180), transparent);
+  background-size: 200% 200%;
+
+  animation: moveBackground 10s ease infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 30% 30%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 1000% 100%;
+  }
+}
+
+
+.navbar {
+  background: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+  color: #565387;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover,
+#header .brand-name {
+  color: #3498db;
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+/* --------------------------------------------------- */
+
+/* styles for the navigation menu */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* --------------------------------------------------- */
+
+/* style for the contact */
+
+/* Basic styles */
+.contact-header {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 10px 10px 8px gray;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 0.5rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------- */
+
+/* style for the Common */
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-section {
+  flex: 1;
+  padding: 1rem;
+}
+
+.brand-name {
+  color: #f07f00; /* Adjust this color as needed */
+}
+
+.description {
+  margin: 1rem 0;
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+.btn-get-started {
+  background-color: #f07f00; /* Adjust this color as needed */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+.btn-get-started:hover {
+  background-color: #d06d00;
+}
+
+/* Define keyframes for the fade-in animation */
+@keyframes up-down {
+  from {
+    opacity: 1;
+    transform: translateY(12px); 
+  }
+  to {
+    opacity: 10;
+    transform: translateY(-12px);
+  }
+}
+
+.image-section {
+  margin-top: 10px;
+  text-align: center;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  mix-blend-mode: darken;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------- */
+
+/* style for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #222;
+  color: #aaa;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 10px;
+  }
+
+  .footer-section h2 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section ul,
+  .footer-section a {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+
+/* --------------------------------------------------- */
+/* style for the Service */
+
+/* Container styling */
+.service-container {
+  margin: 2rem auto;
+}
+
+/* Heading styling */
+.service-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid styling for the cards */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width:300px;
+  box-shadow: 10px 10px 8px gray;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  mix-blend-mode: darken;
+}
+
+.card-title {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+
+
+
